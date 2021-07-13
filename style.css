@@ -93,10 +93,11 @@ a {
 .about-me-text h2 {
   font-size: 2em;
   text-align: center;
+  margin-bottom: 1.5em;
 }
 
 .about-me-text p {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .projects {
   display: grid;
@@ -127,7 +128,7 @@ footer {
   padding: 3em;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .main-heder {
     height: 55vh;
   }
@@ -170,24 +171,19 @@ footer {
     font-size: 2em;
     padding: 2em;
   }
-}
+} */
 
 @media (max-width: 500px) {
   .main-heder {
     height: 60vh;
   }
   .main-heder h1 {
-    font-size: 3em;
-  }
-
-  .icons {
-    display: flex;
-    align-self: flex-end;
+    font-size: 2em;
   }
 
   .icons img {
     width: 4em;
-    margin: 3em;
+    /* margin: 3em; */
   }
   a {
     padding: 0 !important;
@@ -196,24 +192,19 @@ footer {
   .icons img:hover {
     transform: scale(1.1);
   }
+  .about-me-container {
+    width: 50%;
+  }
+
   .projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     justify-content: center;
-    padding-left: 1em;
-    padding-right: 1em;
   }
 
-  .projects h2 {
-    text-align: center;
-    font-size: 3em;
-    grid-column-start: span 3;
-    color: rgb(228, 228, 228);
-    padding: 2em;
-  }
   .projects img {
-    margin-bottom: 1.5em;
+    padding: 0;
   }
 
   .projects-header {
